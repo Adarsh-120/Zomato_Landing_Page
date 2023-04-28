@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero_Section {
+  background: url(./Images/Image/10123-J-20123-Zomato-Landing-Page-setup/images/heroSectionBackground.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 60vh;
+}
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 65px;
+  padding: 16px 48px;
+}
+.Navbar a {
+  color: white;
+  text-decoration: none;
+}
+.Nav_Menu_container {
+  display: flex;
+  gap: 18px;
+}
+.User_Icon {
+}
