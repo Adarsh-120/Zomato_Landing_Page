@@ -152,10 +152,6 @@
   justify-content: center;
 }
 
-.we_offer_card:hover {
-  transform: scale(1.1);
-}
-
 .we_offer_card {
   border-radius: 10px;
   /* background-color: aqua */
@@ -163,6 +159,10 @@
   border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
   margin-right: 12px;
+}
+
+.we_offer_card:hover {
+  transform: scale(1.1);
 }
 
 .we_offer_card img {
@@ -189,7 +189,7 @@
   font-weight: 600;
 }
 
-.collections .sub__heading_container {
+.collections .sub_heading_container {
   font-size: 15px;
   display: flex;
   align-items: center;
@@ -198,7 +198,7 @@
   gap: 1rem;
 }
 
-.sub__heading_container span:nth-child(2) {
+.sub_heading_container span:nth-child(2) {
   color: #ff7e8b;
   font-size: 13px;
   cursor: pointer;
@@ -246,11 +246,11 @@
   top: 0;
   left: 0;
   border-radius: 10px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(225, 0, 0, 1) 0%,
     rgba(225, 0, 2, 1) 50%,
     rgba(225, 0, 0, 1) 85%
-  );
+  ); */
   z-index: 5;
 }
 
@@ -268,6 +268,8 @@
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+
+/* get__the-app area.... */
 
 .get__the_app {
   display: flex;
@@ -380,4 +382,188 @@
 
 .right .download__app_container div img {
   width: 35%;
+}
+
+/* Media Queries for Download App */
+@media only screen and (max-width: 1300px) {
+  .get__the_app .semiContainer .left,
+  .get__the_app .semiContainer .right {
+    flex: 1;
+  }
+
+  .get__the_app .semiContainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .get__the_app {
+    padding: 2rem;
+  }
+  .get__the_app .semiContainer {
+    width: 95%;
+  }
+}
+
+/* Explore Area .... */
+
+.Explore_area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: right;
+  /* justify-content: left; */
+  width: 100%;
+  padding: 3rem 6rem;
+}
+
+.title_Explore_area h4 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#Drop_Explore_area .Cuisiner_near,
+#Drop_Explore_area .Restaurants_near,
+#Drop_Explore_area .City_delivery {
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 5px;
+  width: 80px;
+}
+
+/* .input_container {
+  flex-wrap: wrap;
+}
+
+.input_container button,
+.input_container input {
+  padding: 10px 12px;
+}
+
+.input_container input {
+  flex: auto;
+  border: 1.5px solid gray;
+  outline: none;
+  border-radius: 5px;
+}
+*/
+
+/* Footer Area --- */
+
+.footer {
+  width: 100%;
+}
+
+.footer_section1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.footer_section1 img {
+  width: 130px;
+}
+
+.section1__buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.section1__buttonContainer button {
+  padding: 5px;
+  width: 90px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.navigation_container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.link__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link__container h5 {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: gray;
+  font-size: 12.5px;
+  font-weight: 300;
+}
+
+.footer__link:hover {
+  color: black;
+}
+
+.section__links_container button {
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+.section__links_container button i {
+  /* color: white; */
+  font-size: 13px;
+  display: flex;
+  /* horizontal / x-axis */
+  align-items: center;
+  /* Vertical / y-axis */
+  justify-content: center;
+}
+
+.footer__section_logos {
+  width: 100%;
+}
+
+.disclamer {
+  width: 95%;
+  color: gray;
+  margin: auto;
+  border-top: 1px solid gray;
+  padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navigation_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navigation_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
