@@ -6,7 +6,7 @@
 }
 
 .hero_Section {
-  background: url(./Images/Image/10123-J-20123-Zomato-Landing-Page-setup/images/heroSectionBackground.png);
+  background: url("./images/heroSectionBackground.png");
   background-size: cover;
   background-position: center;
   color: white;
@@ -223,19 +223,19 @@
 }
 
 .card1 {
-  background-image: url("./Images/Image/10123-J-20123-Zomato-Landing-Page-setup/images/collection1.jpg");
+  background-image: url("./images/collection1.jpg");
 }
 
 .card2 {
-  background-image: url("./Images/Image/10123-J-20123-Zomato-Landing-Page-setup/images/collection2.jpg");
+  background-image: url("./images/collection2.jpg");
 }
 
 .card3 {
-  background-image: url("./Images/Image/10123-J-20123-Zomato-Landing-Page-setup/images/collection3.jpg");
+  background-image: url("./images/collection3.jpg");
 }
 
 .card4 {
-  background-image: url("./Images/Image/10123-J-20123-Zomato-Landing-Page-setup/images/collection4.jpg");
+  background-image: url("./images/collection4.jpg");
 }
 
 /* rgba => Red, Green, Blue, Opacity */
@@ -408,10 +408,64 @@
 /* Explore Area .... */
 
 .Explore_area {
-  display: grid;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* width: 100%; */
+  padding: 3rem 6rem;
+}
+
+.Explore_area .Drop_Explore_area .Tag h2 {
+  font-weight: 450;
+  padding: 10px;
+  display: flex;
+}
+
+.Explore1 select,
+.Explore2 select,
+.Explore3 select {
+  flex-wrap: wrap;
+  align-items: left;
+}
+.Explore1,
+select {
+  width: 100%;
+  padding: 12px 100px;
+  margin: 3px 0;
+  display: inline-block;
+  /* border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; */
+  cursor: pointer;
+}
+.Explore2,
+select {
+  width: 100%;
+  padding: 12px 100px;
+  margin: 3px 0;
+  display: inline-block;
+  /* border: 1px solid #ccc;
+  border-radius: 4px; */
+  /* box-sizing: border-box; */
+  cursor: pointer;
+}
+.Explore3,
+select {
+  width: 100%;
+  padding: 12px 100px;
+  margin: 3px 0;
+  display: inline-block;
+  /* border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; */
+  cursor: pointer;
+}
+
+/* .Explore_area {
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   align-items: right;
-  /* justify-content: left; */
+ 
   width: 100%;
   padding: 3rem 6rem;
 }
@@ -429,7 +483,7 @@
   outline: none;
   border-radius: 5px;
   width: 80px;
-}
+} */
 
 /* .input_container {
   flex-wrap: wrap;

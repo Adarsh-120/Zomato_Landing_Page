@@ -1,6 +1,5 @@
-# Zomato_Landing_Page
+# This is my zomato landing page clone
 
-It is just a zomato clone .
+## Done with first commit.
 
-<!-- check once Explore section which is before the footer serction in Html and Css both-->
-<!--Repeat all the section once more , to extend the knowledge in this field  -->
+## Set Up created here for our appln
